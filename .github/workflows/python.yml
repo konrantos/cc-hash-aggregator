@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  run-script:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -16,4 +16,4 @@ jobs:
         with:
           python-version: '3.11'
       - name: Run script
-        run: python fast_cc_charge_aggregator.py
+        run: python cc-hash-aggregator.py
